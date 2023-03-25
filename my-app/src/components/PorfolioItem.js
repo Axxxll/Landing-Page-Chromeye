@@ -4,8 +4,6 @@ import button from './Button.module.css'
 
 
 export default function PortfolioItem(props) {
-    console.log(props)
-
     return (
         <div>
             <img src={props.image} className={styles.image}/>

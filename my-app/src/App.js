@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Services from './components/Services'
 import Portfolio from './components/Portfolio'
+import AgencyServices from './components/AgencyServices'
 import {useState, useEffect} from 'react'
 
 
@@ -25,6 +26,8 @@ export default function App() {
         <Hero {...data.hero}/>
         <Services {...data.services}/>
         <Portfolio {...data.portfolio}/>
+        <hr className='divider'/>
+        <AgencyServices {...data.agency_services}/>
         </>
         
     )
