@@ -1,0 +1,41 @@
+.servicesContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px 25px;
+    text-align: center;
+}
+
+
+
+.itemContainer {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.itemTitle {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.itemDescription {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: black;
+}
+
+
+.icon {
+    width: 65px;
+    padding-top: 64px;
+}
+
+.symbol {
+    width: 25px;
+}

@@ -1,0 +1,27 @@
+.container {
+    padding: 0px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container>p {
+    text-align: center;
+}
+
+.container>h3 {
+    text-align: center;
+}
+
+.image {
+    max-width: 100%;
+    padding-bottom: 32px;
+    padding-top: 64px;
+}
+
+.divider {
+    width: 272px;
+    border: 1px solid #00BAFF;
+    justify-self: start;
+    margin-left: 0;
+    margin-bottom: 0;
+}

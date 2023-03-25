@@ -1,0 +1,38 @@
+.hero {
+    background: linear-gradient(202.03deg, rgba(253, 192, 183, 0.8) 26.85%, rgba(210, 204, 255, 0.8) 57.21%, rgba(107, 180, 253, 0.8) 87.06%);
+}
+
+.heroText {
+    padding: 64px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    margin: 0;
+    font-weight: 700;
+    line-height: 48px;
+    font-size: 8.9vw;
+    text-align: center;
+    max-width: 100;
+}
+
+.description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin: 0;
+}
+
+.imageContainer{
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 50px;
+}
+
+.image {
+    max-width: 100%;
+}

@@ -1,0 +1,17 @@
+.title {
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 42px;
+    margin: 0;
+    padding-bottom: 16px;
+}
+
+.description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0;
+    flex-grow: 0;
+    padding-top: 32px;
+}

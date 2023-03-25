@@ -1,0 +1,22 @@
+.navbar {
+    display: flex;
+    height: 81px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 27px;
+    max-width: 100%;
+}
+
+.navbarLogo {
+    height: 73px;
+}
+
+.navbarButton {
+    height: 32px;
+    background-color: white;
+    border: none;
+}
+
+.navbarButton > img {
+    max-height: 100%;
+}
