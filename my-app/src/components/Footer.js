@@ -6,7 +6,6 @@ import button from './Button.module.css'
 
 
 export default function Footer(props) {
-    console.log(props)
 
     const companyDataArr = props.footer_menu.map(item => {
         return <a href={item.url} key={item.order} className={styles.links}>{item.name}</a>

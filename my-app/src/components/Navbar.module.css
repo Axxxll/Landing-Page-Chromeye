@@ -17,6 +17,27 @@
     border: none;
 }
 
-.navbarButton > img {
+.navbarButton>img {
     max-height: 100%;
+}
+
+.navbarMenu {
+    display: flex;
+    gap: 56px;
+    align-items: center;
+}
+
+.links {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0;
+}
+
+@media only screen and (min-width: 768px) {
+    .navbar{
+        justify-content: space-around;
+    }
 }

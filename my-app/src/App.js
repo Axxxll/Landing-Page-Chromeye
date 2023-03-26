@@ -1,5 +1,6 @@
 import './style.css'
 import Navbar from './components/Navbar'
+import NavbarDesk from './components/NavbarDesk'
 import Hero from './components/Hero'
 import Services from './components/Services'
 import Portfolio from './components/Portfolio'
@@ -22,9 +23,19 @@ export default function App() {
     if (!data) {
         return null
     } 
+
+    const screenWidth = window.innerWidth
+    let mediaMobile;
+    if (screenWidth < 768) {
+        mediaMobile = true
+    }
+
+    const navbarMobile = <Navbar {...data}/>
+    const navbarDesktop = <NavbarDesk menu={data.main_menu}/>
+
     return (
         <>
-        <Navbar {...data}/>
+        {mediaMobile ? navbarMobile : navbarDesktop}
         <Hero {...data.hero}/>
         <Services {...data.services}/>
         <Portfolio {...data.portfolio}/>

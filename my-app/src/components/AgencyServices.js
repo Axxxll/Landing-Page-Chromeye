@@ -1,19 +1,28 @@
 import AgencyServicesItem from "./AgencyServicesItem"
 import typography from'./Typography.module.css'
 import styles from './AgencyServices.module.css'
-import { useState } from "react"
+import {useMemo, useState} from "react"
 
 
 export default function AgencyServices(props) {
+    const [activeItem, setActiveItem] = useState(0);
 
-    const [image, setImage] = useState(props.items[0].image)
+    const image = useMemo(() => {
+        return props.items[activeItem].image
+    }, [activeItem])
 
-    const agencyServicesItemArr = props.items.map(item => {
-        return <AgencyServicesItem {...item} key={item.title} onClick={updateImage}/>
+    const agencyServicesItemArr = props.items.map((item, index) => {
+        return <AgencyServicesItem
+            {...item}
+            key={item.title}
+            id={index}
+            onClick={handleItemClicked}
+            expanded={index === activeItem}
+        />
     })
 
-    function updateImage(e) {
-        setImage(e)
+    function handleItemClicked(itemIndex) {
+        setActiveItem(itemIndex)
     }
 
     return (
