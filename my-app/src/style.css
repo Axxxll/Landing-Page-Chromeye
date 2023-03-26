@@ -9,9 +9,10 @@ body {
 
 .divider {
     border: 1px solid #00BAFF;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: auto;
     margin-top: 11px;
+    max-width: 330px;
+    align-items: center;
 }
 
 .container {

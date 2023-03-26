@@ -37,3 +37,11 @@
 .symbol {
     width: 25px;
 }
+
+@media only screen and (min-width: 768px) { 
+    .itemsContainer{
+        display: flex;
+        justify-content: center;
+    }
+
+}

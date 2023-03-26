@@ -37,7 +37,8 @@
 }
 
 @media only screen and (min-width: 768px) {
-    .navbar{
+    .navbar {
         justify-content: space-around;
+        height: 100px;
     }
 }

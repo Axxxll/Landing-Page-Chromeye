@@ -1,14 +1,14 @@
 import styles from './Services.module.css'
 import button from './Button.module.css'
-import typography from'./Typography.module.css'
+import typography from './Typography.module.css'
 import ServiceItems from './ServiceItems'
 
 
 export default function Services(props) {
 
-const serviceItems = props.items.map( item => {
-    return <ServiceItems {...item} key={item.title}/>
-})
+    const serviceItems = props.items.map(item => {
+        return <ServiceItems {...item} key={item.title} />
+    })
     return (
         <div className={styles.servicesContainer}>
             <h2 className={typography.title}>
@@ -17,10 +17,12 @@ const serviceItems = props.items.map( item => {
             <p className={typography.description}>
                 {props.description}
             </p>
-            {serviceItems}
+            <div className={styles.itemsContainer}>
+                {serviceItems}
+            </div>
             <button className={button.blue}>
                 {props.buttonLabel}
             </button>
         </div>
     )
-}
+} 

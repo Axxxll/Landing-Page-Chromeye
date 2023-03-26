@@ -25,3 +25,24 @@
     margin-left: 0;
     margin-bottom: 0;
 }
+
+@media only screen and (min-width: 768px) { 
+    .container {
+        align-items: center;
+    }
+    .itemContainer{
+        display: flex;
+        align-items: center;
+        gap: 120px;
+    }
+    .itemContainerRev {
+        display: flex;
+        align-items: center;
+        gap: 120px;
+        flex-direction: row-reverse;
+    }
+    .image{
+        max-width: 638px;
+        max-height: 570px;
+    }
+}

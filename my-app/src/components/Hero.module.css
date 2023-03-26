@@ -36,3 +36,23 @@
 .image {
     max-width: 100%;
 }
+
+@media only screen and (min-width: 768px) {
+    .hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 714px;
+        gap: 25px;
+    }
+    .title {
+        font-size: 44px;
+        max-width: 500px;
+    }
+    .heroText {
+        max-width: 587px;
+    }
+    .imageContainer {
+        max-width: 587px;
+    }
+}

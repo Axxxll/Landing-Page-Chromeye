@@ -15,11 +15,11 @@ export default function ServiceItems(props) {
     const description = <p className={styles.itemDescription}>{props.description}</p>
     return (
         <div className={styles.itemContainer}>
-            <img src={props.icon} className={styles.icon} alt='check'/>
+            <img src={props.icon} className={styles.icon} alt='check' />
             <h3 className={styles.itemTitle}>
                 {props.title}
             </h3>
-            <img src={clicked ? minusIcon : plusIcon} className={styles.symbol} onClick={showDescription} alt='sybol'/>
+                <img src={clicked ? minusIcon : plusIcon} className={styles.symbol} onClick={showDescription} alt='sybol' />
             {clicked ? description : null}
         </div>
     )

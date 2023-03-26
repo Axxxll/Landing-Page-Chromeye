@@ -7,7 +7,7 @@ import typography from'./Typography.module.css'
 export default function Portfolio(props) {
 
     const porfolioItems = props.items.map(item => {
-        return <PortfolioItem {...item} key={item.title}/>
+        return <PortfolioItem {...item} key={item.title} reversed={item.title === '3D Visuals' ? true : false}/>
     })
 
     return (
@@ -17,4 +17,4 @@ export default function Portfolio(props) {
             {porfolioItems}
         </div>
     )
-}
+} 
