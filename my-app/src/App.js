@@ -4,6 +4,8 @@ import Hero from './components/Hero'
 import Services from './components/Services'
 import Portfolio from './components/Portfolio'
 import AgencyServices from './components/AgencyServices'
+import CallToAction from './components/CallToAction'
+import Footer from './components/Footer'
 import {useState, useEffect} from 'react'
 
 
@@ -28,6 +30,8 @@ export default function App() {
         <Portfolio {...data.portfolio}/>
         <hr className='divider'/>
         <AgencyServices {...data.agency_services}/>
+        <CallToAction />
+        <Footer {...data.company_data} footer_menu={data.footer_menu}/>
         </>
         
     )

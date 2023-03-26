@@ -1,4 +1,4 @@
-.button {
+.blue {
     padding: 24px 32px;
     border: none;
     background-color: #00BAFF;
@@ -12,4 +12,22 @@
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     margin-top: 32px;
+}
+
+.grey {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    border: none;
+    background: #646464;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    padding: 24px 32px;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 207px;
 }

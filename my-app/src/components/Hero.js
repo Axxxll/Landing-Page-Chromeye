@@ -15,7 +15,7 @@ export default function Hero(props) {
                 >
                     {props.description}
                 </p>
-                <button className={button.button}>
+                <button className={button.blue}>
                     {props.buttonLabel}
                 </button>
             </div>

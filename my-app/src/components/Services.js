@@ -18,7 +18,7 @@ const serviceItems = props.items.map( item => {
                 {props.description}
             </p>
             {serviceItems}
-            <button className={button.button}>
+            <button className={button.blue}>
                 {props.buttonLabel}
             </button>
         </div>
